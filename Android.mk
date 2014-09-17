@@ -1,3 +1,7 @@
+ifneq ($(call my-dir),$(call project-path-for,qcom-gps))
+TARGET_USES_HARDWARE_QCOM_GPS := false
+endif
+
 #set TARGET_USES_HARDWARE_QCOM_GPS to false to disable this project.
 
 ifeq ($(TARGET_USES_HARDWARE_QCOM_GPS),)
